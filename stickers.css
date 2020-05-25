@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Abril+Fatface|Dancing+Script|Indie+Flower|Kelly+Slab|Lobster|Ma+Shan+Zheng|Roboto+Slab|Teko|Zhi+Mang+Xing&display=swap');
+body {
+    margin: 0;
+    font-family: montserrat, sans-serif;
+    color: #222222;
+    text-align: center;
+}
+
+.container {
+    display: inline-flex;
+    padding-top: 2em;
+}
+
+.product_view {
+    width: 20vw;
+    text-align: center;
+    padding: 1em 0 0 0;
+}
+
+.product_view h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.custom_name_text {
+    font-size: 3rem;
+    padding: 0;
+}
+
+.img_preview {
+    width: 10%;
+}
+
+.canvas {
+    width: 250px;
+    height: 250px;
+    background-color: #000;
+}
+
+.product_selections {
+    width: 20vw;
+    text-align: left;
+    padding: 0 0 0 5em;
+}
+
+.color_div {
+    max-width: 18em;
+}
+
+.color_pick {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    padding: .5em;
+    cursor: pointer;
+    border-radius: 2em;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 1px lightgrey;
+}
+
+.product_selections h4 {
+    margin: 1.2em 0 .5em 0;
+}
+
+.product_selections input {
+    outline: none;
+    border: 0;
+    width: 19em;
+    padding: 1em;
+    background-color: rgb(247, 247, 247);
+    border-radius: 3em;
+}
+
+.product_selections input:focus {
+    border-bottom: 3px solid rgb(0, 166, 231);
+}
+
+.product_selections select {
+    outline: none;
+    border: 0;
+    width: 21em;
+    padding: 1em;
+    background-color: rgb(247, 247, 247);
+    border-radius: 3em;
+}
+
+.product_selections select:focus {
+    border-bottom: 3px solid rgb(0, 166, 231);
+}
+
+.product_selections button {
+    margin-top: 2em;
+    border: 0;
+    width: 19em;
+    padding: 1em;
+    color: #fff;
+    background-color: rgb(0, 166, 231);
+    border-radius: 3em;
+    cursor: pointer;
+}
+
+.product_selections button:hover {
+    background-color: #222;
+}

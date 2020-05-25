@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stickers</title>
+        <link rel="stylesheet" href="/projects/stickers/stickers.css">
+        <script src="https://www.marvinj.org/releases/marvinj-0.9.js"></script>
+        <script src="/projects/stickers/fitty.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"
+            crossorigin="anonymous"></script>
+        <script src="/projects/stickers/stickers.js"></script>
+    </head>
+    <body>
+
+        <h1>BABY ON BOARD</h1>
+        <div class="container">
+
+            <div class="product_view">
+                <h1 id="little">LITTLE</h1>
+                <div class="custom_name_text" id="custom_name_text">NAME</div>
+                <div id="canvas_background">
+                    <canvas class="canvas" id="canvas"></canvas>
+                </div>
+                <img id="img_preview" src="" alt="" style="display:none;">
+                <h1 id="on_board">ON BOARD</h1>
+            </div>
+
+            <div class="product_selections">
+
+                <h4>Upload image</h4>
+                <input type="file" name="" id="file"
+                    onchange="load_image(this)">
+
+                <h4>Enter name</h4>
+                <input type="text" name="" maxlength="10"
+                    oninput="name_change(this.value)">
+
+                <h4>Select font</h4>
+
+                <select id="font_select" onchange='font_change(this.value)'>
+                    <option value="" selected disabled hidden>Select</option>
+                    <option value="'Abril Fatface', cursive">Abril Fatface</option>
+                    <option value="'Zhi Mang Xing', cursive">Zhi Mang Xing</option>
+                    <option value="'Roboto Slab', serif">Roboto Slab</option>
+                    <option value="'Teko', sans-serif">Teko</option>
+                    <option value="'Kelly Slab', cursive">Kelly Slab</option>
+                    <option value="'Anton', sans-serif">Anton</option>
+                    <option value="'Ma Shan Zheng', cursive">Ma Shan Zheng</option>
+                    <option value="'Lobster', cursive">Lobster</option>
+                    <option value="'Dancing Script', cursive">Dancing Script</option>
+                    <option value="'Indie Flower', cursive">Indie Flower</option>
+                </select>
+
+                <h4>Select colour</h4>
+                <div class="color_div">
+                    <div class="color_pick" id="slide-pink"
+                        style="background-color:#ff7bac;"></div>
+                    <div class="color_pick" id="slide-blue"
+                        style="background-color:#3fa9f5;"></div>
+                    <div class="color_pick" id="slide-green"
+                        style="background-color:#00bf09;"></div>
+                    <div class="color_pick" id="slide-yellow"
+                        style="background-color:#f7f70c;"></div>
+                    <div class="color_pick" id="slide-orange"
+                        style="background-color:#f95b00;"></div>
+                    <div class="color_pick" id="slide-red"
+                        style="background-color:#dd0000;"></div>
+                    <div class="color_pick" id="slide-purple"
+                        style="background-color:#7100e2;"></div>
+                    <div class="color_pick" id="slide-grey"
+                        style="background-color:#bababa;"></div>
+                    <div class="color_pick" id="slide-black"
+                        style="background-color:#000000;"></div>
+                    <div class="color_pick" id="slide-white"
+                        style="background-color:rgb(247, 247, 247);"></div>
+                </div>
+
+
+                <button class="add_to_cart">ADD TO CART</button>
+            </div>
+        </div>
+
+    </body>
+</html>
